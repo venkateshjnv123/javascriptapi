@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie List Application</title>
+   <link rel="stylesheet" type="text/css" href="apistyles.css">
+</head>
+<body>
+  <header>
+    <h1>Movie List Application</h1>
+    <input type="text" id="searchInput" placeholder="Search for movies...">
+    <select id="mediaSelect">
+      <option value="all">All</option>
+      <option value="movie">Movies</option>
+      <option value="series">Series</option>
+      <option value="episode">Episode</option>
+    </select>
+    <button onclick="searchmovi()" class="save-btn" id="searchbutton">Search</button>
+  </header>
+
+  <main>
+    <div id="movieList" class="movieList">
+      <!-- Movie posters and names will be dynamically added here -->
+    </div>
+
+    <div id="pagination">
+      <!-- Pagination buttons will be dynamically added here -->
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content" id="modalcontent">
+    </div>
+  </div>
+  <script src="apiscript.js"></script>
+</body>
+</html>
